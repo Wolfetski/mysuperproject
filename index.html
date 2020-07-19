@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Видеосервис</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo">
+            <span>Видеосервис</span>
+        </div>
+        <div class="input">
+            <input type="text" class="search" placeholder="Поиск...">
+            <input type="submit" class="submit" value="Найти">  
+            <input onclick="show('block')" type="button" class="button" value="Войти">
+        </div>
+    </header>
+    <div onclick="show('none')" id="gray"></div>
+    <div id="window">
+        <div class="login">
+            <h4>Вход</h4>
+            <form action="">
+                <input class="input-login" type="text" placeholder="Логин">
+                <input class="input-login" type="password" placeholder="Пароль">
+                <input class="input-checkbox" type="checkbox"> Запомнить
+                <input type="submit" class="login-button" value="Войти">
+            </form>
+        </div>
+    </div>
+    <div id="tabs">
+       <div class="tab redborder">Фильмы</div>
+       <div class="tab">Тeлеканалы</div>
+    </div>
+    <div class="tabContent movie-item">
+        <div class="News">
+            <span>&#128293 Новинки</span>
+        </div>
+        <div class="movie">
+            <div class="cat">
+                <a href="">
+                    <img src="img/cat.png" alt="cat">
+                </a>  
+                <p>Мульт в кино. Выпуск №103 Некогда грустить</p>  
+            </div>
+            <div class="batman">
+                <a href="">
+                    <img src="img/batman.png" alt="batman">
+                </a> 
+                <p>Новый Бэтмен</p>
+            </div>
+            <div class="hollywood">
+                <a href="">
+                    <img src="img/Hollywood.png" alt="Hollywood">
+                </a>
+                <p>Однажды... в Голливуде</p>
+            </div>
+            <div class="girl">
+                <a href="">
+                    <img src="img/girl.png" alt="girl">
+                </a>
+                <p>Стриптизёрши</p>
+            </div>
+        </div>
+   
+        <div class="genres-text">
+            <span>Жанры</span>
+            <div class="genres">
+                <div class="comedies">
+                    <img src="img/😁.png" alt="funny">
+                    <p>Комедии</p>
+                </div>
+                <div class="Dramas">
+                    <img src="img/😭.png" alt="dramas">
+                    <p>Драмы</p>
+                </div>
+                <div class="fantasy">
+                    <img src="img/👽.png" alt="fantasy">
+                    <p>Фнтастика</p>
+                </div>
+                <div class="horrors">
+                    <img src="img/👻.png" alt="horror">
+                    <p>Ужасы</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tabContent TV">
+        <div class="first-chanel">
+            <img src="img/first-chanel.png" alt="chanel">
+            <div class="first-chanel-info">
+                <p id="first-chanel-text">Первый канал</p>
+                <p style="color: red;">13:00 Новости (с субтитрами)</p>
+                <p>14:00 Давай поженимся</p>
+                <p>15:00 Другие новости</p>
+            </div>
+        </div>
+        <div class="two-chanel">
+            <img src="img/2x2.png" alt="chanel">
+            <div class="two-chanel-info">
+                <p id="two-chanel-text">2x2</p>
+                <p style="color: red;">13:00 МУЛЬТ ТВ. Сезон 4, 7 серия</p>
+                <p>14:00 ПОДОЗРИТЕЛЬНАЯ СОВА. Сезон 7, 7 серия</p>
+                <p>15:00 БУРДАШЕВ. Сезон 1, 20 серия</p>
+            </div>
+        </div>
+        <div class="three-chanel">
+            <img src="img/Fill 1.png" alt="chanel">
+            <img id="three-chanel-img" src="img/Fill 2.png" alt="chanel">
+            <div class="three-chanel-info">
+                <p id="three-chanel-text">РБК</p>
+                <p style="color: red;">13:00 ДЕНЬ. Горючая смесь: как бороться с суррогатом на АЗС</p>
+                <p>14:00 ДЕНЬ. Главные темы</p>
+                <p>15:00 Главные новости</p>
+            </div>
+        </div>
+        <div class="four-chanel">
+            <img src="img/Amedia.png" alt="chanel">
+            <div class="four-chanel-info">
+                <p id="four-chanel-text">AMEDIA PREMIUM</p>
+                <p style="color: red;">13:00 Клиент всегда мёртв</p>
+                <p>14:00 Голодные игры: Сойка-пересмешница. Часть I</p>
+                <p>15:00 Секс в большом городе</p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="img/Vector.png" alt="Vector">
+        <div class="footer-text">
+            <p>426057, Россия, Удмуртская Республика, г. Ижевск, ул. Карла Маркса, 246 (ДК «Металлург»)</p>
+            <p>+7 (3412) 93-88-61, 43-29-29</p>
+            <a href="#">htc-cs.ru</a>
+        </div>
+    </footer>
+<script src="js/script.js"></script>
+</body>
+</html>
